@@ -2,10 +2,40 @@
 import "bootstrap";
 import "./style.css";
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+const ul = document.querySelector("#list");
+const button = document.querySelector("#button");
+const input = document.querySelector("#input");
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+button.addEventListener("click", () => {
+  const newLi = document.createElement("li");
+
+  newLi.innerHTML = `${input.value} <i class="bi bi-trash3-fill"></i>`;
+  newLi.classList = "liRow";
+
+  ul.appendChild(newLi);
+
+  input.value = "";
+});
+
+input.addEventListener("keyup", event => {
+  if (event.key === "Enter" && input.value !== "") {
+    const newLi = document.createElement("li");
+    newLi.innerHTML = `${input.value} <i class="bi bi-trash3-fill"></i>`;
+    newLi.classList = "liRow";
+
+    ul.appendChild(newLi);
+
+    input.value = "";
+  }
+});
+
+const icon = document.querySelector(".bi-trash3-fill");
+
+ul.addEventListener("click", event => {
+  if (event.target.classList.contains("bi-trash3-fill")) {
+  }
+  const li = event.target.closest("li");
+  if (li) {
+    li.remove();
+  }
+});

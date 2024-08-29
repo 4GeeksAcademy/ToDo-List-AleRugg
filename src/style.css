@@ -1,1 +1,54 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.bi {
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.liRow {
+  margin-top: 10px;
+}
+
+.listContainer {
+  height: auto;
+  width: 510px;
+  background-color: aqua;
+  margin-top: 50px;
+}
+
+body {
+  background-color: black;
+}
+
+h1 {
+  color: azure;
+}
+
+.btn {
+  height: 40px;
+  width: 300px;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+input {
+  margin-top: 50px;
+}
