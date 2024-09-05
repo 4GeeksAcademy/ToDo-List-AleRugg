@@ -38,3 +38,16 @@ ul.addEventListener("click", event => {
     li.remove();
   }
 });
+
+const ejercicio = "Alejandro esta viendo clases en 4GeeksAcademy";
+
+const array = ejercicio.split(" ");
+
+const invertido = array.reverse();
+
+const resultado = invertido.join(" ");
+
+console.log(resultado);
+
+// averiguar com poner la manito que se vea que es un objeto clickable en el icono de la basurita // ******* puede ser con un evento mouseover + css
+// averiguar como hacer .push a un array vacio y luego sea mas manejable tambien puede ser que el array vaya creando los li (foreach, map ...)
